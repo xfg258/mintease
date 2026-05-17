@@ -1,0 +1,117 @@
+/* MintEase — token-ui inspired tokens, mint primary */
+:root {
+  --font-sans: "Inter", "Noto Sans SC", ui-sans-serif, system-ui, sans-serif;
+  --radius-sm: 8px;
+  --radius-md: 12px;
+  --radius-lg: 16px;
+  --radius-xl: 20px;
+  --radius-pill: 999px;
+
+  --background: #ffffff;
+  --foreground: #111d4a;
+  --card: #f8f9fa;
+  --popover: #ffffff;
+  --muted: #f0f1f3;
+  --muted-foreground: #99a1af;
+  --border: #ecedf1;
+  --input: #f0f1f3;
+  --ring: #4bce71;
+
+  --primary: #3dbb63;
+  --primary-hover: #34a857;
+  --primary-active: #2d9449;
+  --primary-foreground: #ffffff;
+  --primary-soft: #e8f8ee;
+  --brand-secondary: #7ee0a8;
+  --accent: #e8f8ee;
+  --accent-foreground: #1a5c32;
+
+  --success: #4bce71;
+  --success-surface: #daf1e1;
+  --warning: #fc8c4d;
+  --warning-surface: #fff0e8;
+  --destructive: #f3636f;
+  --destructive-surface: #fde8ea;
+
+  --shadow-sm: 0 1px 2px color-mix(in srgb, #111d4a 6%, transparent);
+  --shadow-md: 0 8px 24px color-mix(in srgb, #111d4a 8%, transparent);
+  --gradient-page: linear-gradient(165deg, #f0fdf4 0%, #ffffff 42%, #f8f9fa 100%);
+  --gradient-hero: linear-gradient(135deg, #4bce71 0%, #7ee0a8 55%, #e8f8ee 100%);
+
+  color-scheme: light;
+}
+
+[data-theme="dark"] {
+  --background: #0c1637;
+  --foreground: #f4f6fb;
+  --card: #0f1a43;
+  --popover: #131f4d;
+  --muted: #1a2858;
+  --muted-foreground: rgba(255, 255, 255, 0.55);
+  --border: #4d5677;
+  --input: #080e25;
+  --ring: #62d082;
+
+  --primary: #4bce71;
+  --primary-hover: #62d082;
+  --primary-active: #3aa85c;
+  --primary-foreground: #0c1637;
+  --primary-soft: #1a3d2a;
+  --brand-secondary: #7ee0a8;
+  --accent: #1a3d2a;
+  --accent-foreground: #daf1e1;
+
+  --success-surface: #1a3d2a;
+  --warning-surface: #3d2a1a;
+  --destructive-surface: #3d1a22;
+
+  --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.35);
+  --shadow-md: 0 12px 32px rgba(0, 0, 0, 0.45);
+  --gradient-page: linear-gradient(165deg, #0a1428 0%, #0c1637 50%, #0f1a43 100%);
+  --gradient-hero: linear-gradient(135deg, #2d7c44 0%, #4bce71 50%, #0f1a43 100%);
+
+  color-scheme: dark;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html,
+body,
+#root {
+  min-height: 100%;
+  margin: 0;
+}
+
+body {
+  font-family: var(--font-sans);
+  background: var(--gradient-page);
+  background-attachment: fixed;
+  color: var(--foreground);
+  -webkit-font-smoothing: antialiased;
+}
+
+button,
+input,
+textarea,
+select {
+  font: inherit;
+}
+
+a {
+  color: var(--primary);
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
+}
